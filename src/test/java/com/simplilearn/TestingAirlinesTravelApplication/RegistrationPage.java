@@ -26,7 +26,7 @@ public class RegistrationPage {
 	Thread.sleep(2000);
 	driver.findElement(By.linkText("Login/Signup")).click();
 	driver.findElement(By.cssSelector("a[href='signup']")).click();
-	driver.findElement(By.name("email_id")).sendKeys("sr@gmail.com");
+	driver.findElement(By.name("email_id")).sendKeys("srk12@gmail.com");
 	driver.findElement(By.name("pwd")).sendKeys("surya@123");
 	driver.findElement(By.name("pwd2")).sendKeys("surya@123");
 	driver.findElement(By.name("name")).sendKeys("surya");
@@ -37,7 +37,7 @@ public class RegistrationPage {
 
 		try {
 		    // Define the location where you want to save the screenshot
-		    File destination = new File("D:\\Course_work\\Capstone_Projects\\Screenshots\\Registration.png");
+		    File destination = new File("D:\\Course_work\\Capstone_Projects\\projects\\TestingAirlinesTravelApplication\\Screenshots\\Registration.png");
 		    
 		    // Copy the captured screenshot to the specified location
 		    FileUtils.copyFile(screenshotFile, destination);

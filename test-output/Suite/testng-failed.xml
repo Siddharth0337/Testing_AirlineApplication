@@ -3,11 +3,6 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.simplilearn.testcases.Testcases$flightbooking">
-        <methods>
-          <include name="book_flight"/>
-        </methods>
-      </class> <!-- com.simplilearn.testcases.Testcases$flightbooking -->
       <class name="com.simplilearn.testcases.Testcases$createuser">
         <methods>
           <include name="singup"/>

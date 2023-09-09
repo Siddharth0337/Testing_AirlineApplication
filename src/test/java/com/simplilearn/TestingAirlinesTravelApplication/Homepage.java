@@ -39,7 +39,7 @@ public class Homepage {
 
 				try {
 				    // Define the location where you want to save the screenshot
-				    File destination = new File("D:\\Course_work\\Capstone_Projects\\Screenshots\\homepage.png");
+				    File destination = new File("D:\\Course_work\\Capstone_Projects\\projects\\TestingAirlinesTravelApplication\\Screenshots\\homepage.png");
 				    
 				    // Copy the captured screenshot to the specified location
 				    FileUtils.copyFile(screenshotFile, destination);

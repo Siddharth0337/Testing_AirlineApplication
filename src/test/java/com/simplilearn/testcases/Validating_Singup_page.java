@@ -52,7 +52,7 @@ public class Validating_Singup_page {
 				File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 				try {
 				    // Define the location where you want to save the screenshot
-				    File destination = new File("D:\\Course_work\\Capstone_Projects\\Screenshots\\Validating_email.png");
+				    File destination = new File("D:\\Course_work\\Capstone_Projects\\projects\\TestingAirlinesTravelApplication\\Screenshots\\Validating_email.png");
 				    // Copy the captured screenshot to the specified location
 				    FileUtils.copyFile(screenshotFile, destination);			    
 				    System.out.println("Screenshot captured and saved to: " + destination.getAbsolutePath());
@@ -82,7 +82,7 @@ public class Validating_Singup_page {
 				File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 				try {
 				    // Define the location where you want to save the screenshot
-				    File destination = new File("D:\\Course_work\\Capstone_Projects\\Screenshots\\Validating_password.png");
+				    File destination = new File("D:\\Course_work\\Capstone_Projects\\projects\\TestingAirlinesTravelApplication\\Screenshots\\Validating_password.png");
 				    // Copy the captured screenshot to the specified location
 				    FileUtils.copyFile(screenshotFile, destination);			    
 				    System.out.println("Screenshot captured and saved to: " + destination.getAbsolutePath());
@@ -113,7 +113,7 @@ public class Validating_Singup_page {
 				File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 				try {
 				    // Define the location where you want to save the screenshot
-				    File destination = new File("D:\\Course_work\\Capstone_Projects\\Screenshots\\Validating_Name.png");
+				    File destination = new File("D:\\Course_work\\Capstone_Projects\\projects\\TestingAirlinesTravelApplication\\Screenshots\\Validating_Name.png");
 				    // Copy the captured screenshot to the specified location
 				    FileUtils.copyFile(screenshotFile, destination);			    
 				    System.out.println("Screenshot captured and saved to: " + destination.getAbsolutePath());

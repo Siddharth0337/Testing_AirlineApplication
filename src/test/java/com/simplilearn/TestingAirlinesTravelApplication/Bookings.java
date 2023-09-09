@@ -35,7 +35,7 @@ public void flights() throws InterruptedException {
 		Select src = new Select(driver.findElement(By.xpath("//select[@name='source']")));
 		src.selectByValue("1");
 		Select dstn = new Select(driver.findElement(By.xpath("//select[@name='destination']")));
-		dstn.selectByValue("11");
+		dstn.selectByValue("4");
 		driver.findElement(By.tagName("button")).click();
 		driver.findElement(By.linkText("Book Flight")).click();
 		driver.findElement(By.linkText("Click to complete booking")).click();
@@ -45,7 +45,7 @@ public void flights() throws InterruptedException {
 
 		try {
 		    // Define the location where you want to save the screenshot
-		    File destination = new File("D:\\Course_work\\Capstone_Projects\\Screenshots\\Bookings.png");
+		    File destination = new File("D:\\Course_work\\Capstone_Projects\\projects\\TestingAirlinesTravelApplication\\Screenshots\\Bookings.png");
 		    
 		    // Copy the captured screenshot to the specified location
 		    FileUtils.copyFile(screenshotFile, destination);

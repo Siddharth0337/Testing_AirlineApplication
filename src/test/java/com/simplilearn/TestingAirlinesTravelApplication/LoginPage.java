@@ -32,7 +32,7 @@ public void signin() throws InterruptedException {
 
 				try {
 				    // Define the location where you want to save the screenshot
-				    File destination = new File("D:\\Course_work\\Capstone_Projects\\Screenshots\\loginpage.png");
+				    File destination = new File("D:\\Course_work\\Capstone_Projects\\projects\\TestingAirlinesTravelApplication\\Screenshots\\loginpage.png");
 				    
 				    // Copy the captured screenshot to the specified location
 				    FileUtils.copyFile(screenshotFile, destination);
