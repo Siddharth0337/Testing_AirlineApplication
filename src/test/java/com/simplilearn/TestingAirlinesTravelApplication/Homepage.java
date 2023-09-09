@@ -12,13 +12,13 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.annotations.Test;
+
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 public class Homepage {
-	@Test
+	
 	public void homepage() throws InterruptedException {
 		
 		WebDriverManager.chromedriver().setup();
@@ -39,7 +39,7 @@ public class Homepage {
 
 				try {
 				    // Define the location where you want to save the screenshot
-				    File destination = new File("D:\\Course_work\\Capstone_Projects\\Screenshots\\screenshot3.png");
+				    File destination = new File("D:\\Course_work\\Capstone_Projects\\Screenshots\\homepage.png");
 				    
 				    // Copy the captured screenshot to the specified location
 				    FileUtils.copyFile(screenshotFile, destination);
@@ -57,7 +57,8 @@ public class Homepage {
 					}
 		}
 		
-		
+		driver.quit();
 	}
+	
 	
 }

@@ -5,7 +5,7 @@
     <classes>
       <class name="com.simplilearn.TestingAirlinesTravelApplication.RegistrationPage">
         <methods>
-          <include name="homepage"/>
+          <include name="register"/>
         </methods>
       </class> <!-- com.simplilearn.TestingAirlinesTravelApplication.RegistrationPage -->
     </classes>

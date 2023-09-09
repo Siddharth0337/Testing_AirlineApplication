@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "4d48f7a3-9dda-4ce4-8f17-f9459e7f529c",
+		"name": "Airline_Ticket_Booking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28292242"
+	},
+	"item": [
+		{
+			"name": "Available_Flights",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9090/{{API}}"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/{{Flight_purchase}}",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"status code is 200\", () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response body should contain 'Your Flight  by  , from  to , on   has been booked for .'\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Your Flight  by  , from  to , on   has been booked for .\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9090/{{flight_purchase}}"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "API",
+			"value": "FlyAway/home"
+		},
+		{
+			"key": "flight_purchase",
+			"value": "FlyAway/completepurchase",
+			"type": "string"
+		}
+	]
+}
