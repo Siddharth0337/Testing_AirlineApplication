@@ -7,7 +7,6 @@ import com.simplilearn.TestingAirlinesTravelApplication.Homepage;
 import com.simplilearn.TestingAirlinesTravelApplication.LoginPage;
 import com.simplilearn.TestingAirlinesTravelApplication.RegistrationPage;
 
-
 public class Testcases {
 	
 	@Test(priority = 1)
@@ -18,8 +17,7 @@ public class Testcases {
 			
 			RegistrationPage obj = new createuser();
 	    	obj.register();
-	    	
-	    
+	    	   
 	   }
 	
 	}

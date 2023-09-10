@@ -1,7 +1,6 @@
 package com.simplilearn.RestAssured;
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;

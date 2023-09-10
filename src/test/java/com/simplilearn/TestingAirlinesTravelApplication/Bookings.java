@@ -11,12 +11,9 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
-
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Bookings {
-	
 	
 public void flights() throws InterruptedException {
 		
@@ -42,27 +39,22 @@ public void flights() throws InterruptedException {
 		driver.findElement(By.linkText("See Your Bookings")).click();
 		// Capture a screenshot as a File object
 		File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-
 		try {
 		    // Define the location where you want to save the screenshot
-		    File destination = new File("D:\\Course_work\\Capstone_Projects\\projects\\TestingAirlinesTravelApplication\\Screenshots\\Bookings.png");
-		    
+		    File destination = new File("D:\\Course_work\\Capstone_Projects\\projects\\TestingAirlinesTravelApplication\\Screenshots\\Bookings.png");	    
 		    // Copy the captured screenshot to the specified location
-		    FileUtils.copyFile(screenshotFile, destination);
-		    
+		    FileUtils.copyFile(screenshotFile, destination);	    
 		    System.out.println("Screenshot captured and saved to: " + destination.getAbsolutePath());
 		} catch (IOException e) {
 		    e.printStackTrace();
 		}
-
 		WebElement table = driver.findElement(By.cssSelector("table[border='1']"));
 		List<WebElement> rows = table.findElements(By.xpath(".//tr"));
 		for (WebElement row : rows) {
 			List<WebElement>cells = row.findElements(By.xpath(".//td"));
 			for (WebElement cell : cells) {
 					System.out.println(cell.getText());
-					}
-			
+					}			
 			}
 		driver.quit();
 	}
